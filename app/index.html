@@ -1,0 +1,108 @@
+<!-- index.html - Página Inicial -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlayLog - Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="imagens/logo.png" alt="PlayLog Logo">
+            </a>
+            <h1>PlayLog</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="pesquisa1.html">JOGOS</a></li>
+                <li><a href="pesquisa2.html">COMUNIDADE</a></li>
+                <li><label for="form-toggle">CONTATO</label></li>
+                <li><label for="login-toggle">LOGIN</label></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="container">
+        <h1>Bem-vindo ao PlayLog</h1>
+        <p>Explore, compartilhe e descubra novos jogos com a comunidade!</p>
+    </main>
+
+<section>
+        <!-- Carrossel de jogos -->
+        <section class="carrossel">
+            <div class="game">
+                <img src="imagens/jogo1.png" alt="The Last Of Us">
+                <div class="overlay">THE LAST OF US</div>
+            </div>
+            <div class="game">
+                <img src="imagens/jogo2.jpg" alt="Celeste">
+                <div class="overlay">CELESTE</div>
+            </div>
+            <div class="game">
+                <img src="imagens/jogo3.png" alt="Minecraft">
+                <div class="overlay">MINECRAFT</div>
+            </div>
+        </section>
+</section>
+
+    <!-- Modal de Login -->
+    <input type="checkbox" id="login-toggle" hidden>
+    <div class="login-modal">
+        <div class="modal-header">
+            <h2>Login</h2>
+            <label for="login-toggle" class="modal-close">&times;</label>
+        </div>
+        <div class="modal-content">
+            <form>
+                <input type="text" placeholder="Usuário" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p class="register-text">Ainda não tem uma conta? <a href="#">Crie uma agora</a></p>
+        </div>
+    </div>
+
+    <!-- Modal de Formulario -->
+    <input type="checkbox" id="form-toggle" hidden>
+    <div class="form-modal">
+        <div class="modal-header">
+            <h2>Contato</h2>
+            <label for="form-toggle" class="modal-close">&times;</label>
+        </div>
+        <div class="modal-content">
+            <form action="feedback.html" method="get">
+                <input type="text" placeholder="Nome" required>
+        
+                <input type="text" placeholder="Email" required>      
+
+                <input type="tel" placeholder="Telefone" required>
+
+                <fieldset>
+                    <legend>Como nos conheceu?</legend>
+                  
+                    <div>
+                      <input type="radio" id="amigo" name="drone" value="amigo" checked />
+                      <label for="amigo">Amigo</label>
+                    </div>
+                  
+                    <div>
+                      <input type="radio" id="internet" name="drone" value="internet" />
+                      <label for="internet">Internet</label>
+                    </div>
+                </fieldset>
+        
+                <input type="text" placeholder="Mensagem" required>  
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por Camila Adrielly dos Santos Quixabeira, Bruna Boschi Santos e Gabriela de Carvalho Gonçalves - 2025</p>
+    </footer>
+</body>
+</html>
