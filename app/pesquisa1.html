@@ -1,0 +1,56 @@
+<!-- pesquisa1.html - Pesquisa de Jogos -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>PlayLog - Pesquisa de Jogos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main class="container">
+        <h1>Pesquisa de Jogos</h1>
+        <p>Explore e descubra novos jogos disponíveis na plataforma.</p>
+    </main>
+
+
+    <header>
+        <div class="logo-container">
+            <a href="index.html">
+                <img src="imagens/logo.png" alt="PlayLog Logo">
+            </a>
+            <h1>PlayLog</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="pesquisa1.html">JOGOS</a></li>
+                <li><a href="pesquisa2.html">COMUNIDADE</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><label for="login-toggle">LOGIN</label></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Modal de Login -->
+    <input type="checkbox" id="login-toggle" hidden>
+    <div class="login-modal">
+        <div class="modal-header">
+            <h2>Login</h2>
+            <label for="login-toggle" class="modal-close">&times;</label>
+        </div>
+        <div class="modal-content">
+            <form>
+                <input type="text" placeholder="Usuário" required>
+                <input type="password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+            <p class="register-text">Ainda não tem uma conta? <a href="#">Crie uma agora</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido por Camila Adrielly dos Santos Quixabeira, Bruna Boschi Santos e Gabriela de Carvalho Gonçalves - 2025</p>
+    </footer>
+</body>
+</html>
